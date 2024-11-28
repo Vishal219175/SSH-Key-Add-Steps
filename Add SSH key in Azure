@@ -1,0 +1,41 @@
+Step 1 :-  Generate an SSH Key Pair 
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+Step 2 :-  
+When prompted to "Enter a file in which to save the key," you can press Enter to accept the default location (~/.ssh/id_rsa).
+You will then be asked to enter a passphrase. This is optional but recommended for added security.
+
+Step 3 :- 
+
+Open your terminal or command prompt.
+
+Navigate to the directory where your SSH keys are stored. This is usually C:\Users\YourUsername\.ssh\.
+
+ex :- cd C:\Users\YourUsername\.ssh\
+
+Step 4 :- 
+
+Use the following command to display the contents of the id_rsa.pub file:
+
+type id_rsa.pub
+
+Step 5 :- 
+Copy the Public Key:
+
+Copy the entire output of the command. This is your public key, and you need to add it to your Azure Devops
+
+Go to User Settings :- 
+Then got to SSH Key 
+Click on Add New Key 
+Then Give a name and paste the publick key you copied 
+
+Then Click on Add 
+
+Use the below link for next steps :- 
+
+https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops
+
+
+
+
